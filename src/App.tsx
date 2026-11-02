@@ -21,8 +21,8 @@ function App() {
         <section className="hero section-wrap" id="home">
           <div className="hero-copy">
             <p className="eyebrow"><span className="status-dot" /> {portfolio.role.toUpperCase()}</p>
-            <h1>Software for<br />real-world <span>work.</span></h1>
-            <p className="hero-intro">{portfolio.summary}</p>
+            <h1>Full-Stack .NET &amp;<br /><span>React Developer</span></h1>
+            <p className="hero-intro">AI-Assisted Development with Claude</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#experience">View experience <ArrowDown size={16} aria-hidden="true" /></a>
               <a className="text-link" href={`mailto:${portfolio.email}`}>Get in touch <ArrowUpRight size={16} aria-hidden="true" /></a>
