@@ -6,7 +6,7 @@ function App() {
     <>
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Mohamed Hussain P, home">
-          MH<span>.</span>
+          Mohamed Hussain P
         </a>
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
@@ -101,7 +101,7 @@ function App() {
       </main>
 
       <footer className="site-footer section-wrap">
-        <a className="wordmark" href="#home">MH<span>.</span></a>
+        <a className="wordmark" href="#home">Mohamed Hussain P</a>
         <p>© {new Date().getFullYear()} {portfolio.name}</p>
         <div><a href={portfolio.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={13} aria-hidden="true" /></a><a href={`mailto:${portfolio.email}`}>Email <ArrowUpRight size={13} aria-hidden="true" /></a></div>
       </footer>
