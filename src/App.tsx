@@ -11,7 +11,6 @@ function App() {
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
         </nav>
         <a className="header-contact" href={`mailto:${portfolio.email}`}>
           Contact <ArrowUpRight size={15} aria-hidden="true" />
@@ -76,24 +75,6 @@ function App() {
                     {job.highlight && <p className="job-highlight">{job.highlight}</p>}
                   </div>
                 </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="skills section-wrap section-block" id="skills">
-          <div className="section-label"><span>03</span> SKILLS</div>
-          <div className="section-main">
-            <div className="section-heading">
-              <div><p className="eyebrow">TECHNICAL SKILLS</p><h2>Core toolkit.</h2></div>
-            </div>
-            <div className="skill-list">
-              {portfolio.skills.map((group, index) => (
-                <div className="skill-group" key={group.category}>
-                  <span className="skill-index">0{index + 1}</span>
-                  <h3>{group.category}</h3>
-                  <div className="tag-list">{group.items.map((skill) => <span className="tag" key={skill}>{skill}</span>)}</div>
-                </div>
               ))}
             </div>
           </div>
