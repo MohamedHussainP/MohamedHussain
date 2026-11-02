@@ -6,12 +6,6 @@ export const portfolio = {
   linkedin: 'https://www.linkedin.com/in/hussain241990/',
   summary:
     'Senior Programmer Analyst with 14+ years of experience in enterprise CRM, ERP, billing and e-commerce. Builds business applications with .NET, React, TypeScript and SQL Server.',
-  skills: [
-    { category: 'Frontend', items: ['React', 'TypeScript', 'JavaScript'] },
-    { category: 'Backend', items: ['C#', 'ASP.NET', '.NET Core', 'REST APIs'] },
-    { category: 'Databases', items: ['SQL Server', 'T-SQL', 'MySQL'] },
-    { category: 'Tools', items: ['Electron', 'Git'] },
-  ],
   experience: [
     {
       company: 'APA Engineering Pvt Ltd',
@@ -19,7 +13,7 @@ export const portfolio = {
       role: 'Senior Programmer Analyst',
       dates: 'Aug 2014 – Present',
       summary: 'Develops GoCadence CRM and B2B/B2C e-commerce for MONDIAL Automotive.',
-      highlight: 'Works on CRM modules, .NET Core API modernization, and an offline-capable Electron and React app.',
+      highlight: 'Works on CRM modules, API modernization, and offline desktop software.',
     },
     {
       company: 'Sami Technology Solutions',
