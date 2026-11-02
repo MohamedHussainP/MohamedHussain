@@ -1,6 +1,6 @@
 # Mohamed Hussain P — Portfolio Website
 
-A responsive personal portfolio built with React, TypeScript and Vite. The design uses a minimal light theme with a navy/blue palette and responsive layouts for mobile, tablet and desktop.
+A responsive personal portfolio built with React, TypeScript and Vite. The design uses a dark, near-black theme with a teal accent and responsive layouts for mobile, tablet and desktop.
 
 ## 1. Requirements
 
@@ -20,20 +20,11 @@ Open the local URL printed by Vite (usually `http://localhost:5173`).
 
 ## 3. Personalize your content
 
-Most portfolio content is kept in one file:
+Portfolio content is kept in one file:
 
 `src/data/portfolio.ts`
 
-Update these fields:
-
-- `email`: your public contact email (optional)
-- `github`: your GitHub profile URL (optional)
-- `about`: your preferred professional summary
-- `experience`: add verified job titles, employers, dates and responsibilities from your resume
-- `projects`: add project names, descriptions, technologies and live links
-- `skills`: adjust the skill names or categories as needed
-
-The Experience and Projects sections appear automatically when their arrays contain entries. They are hidden while empty so the website does not display invented work history or project claims.
+Update the profile, contact details, experience, project descriptions, skills, education and certification there. Keep project descriptions and career claims grounded in verified work history.
 
 ### Add your resume
 
@@ -82,9 +73,8 @@ vercel --prod
 
 ## 6. Before publishing
 
-- Add your resume and verified career history.
-- Add real project details and links; do not leave sample or placeholder achievements on a public portfolio.
-- Add a public email address only if you are comfortable displaying it.
+- Add a PDF resume if you want to offer one for download.
+- Verify public contact details and career/project descriptions before publishing.
 - Replace the default site URL/metadata if you connect a custom domain.
 - Test the navigation and layout on a phone and desktop.
 
