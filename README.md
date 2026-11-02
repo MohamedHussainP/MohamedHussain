@@ -24,7 +24,7 @@ Portfolio content is kept in one file:
 
 `src/data/portfolio.ts`
 
-Update the profile, contact details, experience, project descriptions, skills, education and certification there. Keep project descriptions and career claims grounded in verified work history.
+Update the profile, contact details, experience and skills there. Keep career claims grounded in verified work history.
 
 ### Add your resume
 
