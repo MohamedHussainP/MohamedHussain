@@ -58,6 +58,7 @@ h1, h2, h3, p { margin-top: 0; }
 .orbit-center { display: grid; width: 92px; height: 92px; place-items: center; border: 1px solid #9af0d242; border-radius: 50%; color: var(--accent); background: radial-gradient(circle, #9af0d21a, #101318 72%); box-shadow: 0 0 70px #9af0d20d; }
 .orbit-label { position: absolute; color: #8d929c; font-size: 9px; font-weight: 700; letter-spacing: 1.7px; }
 .orbit-label-top { top: 7%; right: 12%; }
+.orbit-label-skills { top: 7%; left: 12%; }
 .orbit-label-bottom { bottom: 8%; left: 3%; }
 .orbit-node { position: absolute; width: 8px; height: 8px; border: 2px solid var(--background); border-radius: 50%; background: var(--accent); box-shadow: 0 0 18px #9af0d288; }
 .node-one { top: 19%; left: 29%; }

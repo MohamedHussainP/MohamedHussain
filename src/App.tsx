@@ -38,6 +38,7 @@ function App() {
             <div className="orbit orbit-three" />
             <div className="orbit-center"><span>14+</span></div>
             <span className="orbit-label orbit-label-top">YEARS</span>
+            <span className="orbit-label orbit-label-skills">TECHNICAL SKILLS</span>
             <span className="orbit-label orbit-label-bottom">IN SOFTWARE</span>
             <span className="orbit-node node-one" />
             <span className="orbit-node node-two" />
