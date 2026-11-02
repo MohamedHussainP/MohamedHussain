@@ -32,16 +32,28 @@ function App() {
               <a href={portfolio.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} aria-hidden="true" /></a>
             </div>
           </div>
-          <div className="hero-aside" aria-hidden="true">
-            <div className="orbit orbit-one" />
-            <div className="orbit orbit-two" />
-            <div className="orbit orbit-three" />
-            <div className="orbit-center"><span>14+</span></div>
-            <span className="orbit-label orbit-label-top">YEARS</span>
-            <span className="orbit-label orbit-label-skills">TECHNICAL SKILLS</span>
-            <span className="orbit-label orbit-label-bottom">IN SOFTWARE</span>
-            <span className="orbit-node node-one" />
-            <span className="orbit-node node-two" />
+          <div className="hero-aside">
+            <div className="skills-showcase">
+              <div className="experience-highlight">
+                <span className="experience-years">14+</span>
+                <div><strong>YEARS EXPERIENCE</strong><span>Building enterprise software</span></div>
+              </div>
+              <h2 className="skills-showcase-title">TECHNICAL SKILLS</h2>
+              <div className="skills-showcase-list">
+                <article className="skills-showcase-item">
+                  <div><h3>Backend</h3><p>Application development and service logic</p></div>
+                  <div className="skill-tags"><span>ASP.NET 4.0</span><span>.NET Core</span><span>C#</span><span>REST APIs</span></div>
+                </article>
+                <article className="skills-showcase-item">
+                  <div><h3>Frontend</h3><p>Interactive and type-safe user interfaces</p></div>
+                  <div className="skill-tags"><span>React</span><span>TypeScript</span><span>JavaScript</span></div>
+                </article>
+                <article className="skills-showcase-item">
+                  <div><h3>Database &amp; APIs</h3><p>Data storage and application integration</p></div>
+                  <div className="skill-tags"><span>SQL Server 2012</span></div>
+                </article>
+              </div>
+            </div>
           </div>
           <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><ArrowDown size={14} aria-hidden="true" /></a>
         </section>
