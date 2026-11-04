@@ -1,12 +1,31 @@
+import { useEffect, useState } from 'react';
 import { ArrowDown, ArrowUpRight, Download, Mail, MapPin } from 'lucide-react';
 import { portfolio } from './data/portfolio';
 
+const heroHighlights = [
+  'Full-Stack .NET & React Developer',
+  'AI-Assisted Development with Claude',
+  'Legacy-to-React Migration Contributor',
+];
+
 function App() {
+  const [activeHeroHighlight, setActiveHeroHighlight] = useState(0);
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const intervalId = window.setInterval(() => {
+      setActiveHeroHighlight((current) => (current + 1) % heroHighlights.length);
+    }, 3500);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Mohamed Hussain P, home">
-          Mohamed Hussain P
+          MH
         </a>
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
@@ -21,8 +40,10 @@ function App() {
         <section className="hero section-wrap" id="home">
           <div className="hero-copy">
             <p className="eyebrow"><span className="status-dot" /> {portfolio.role.toUpperCase()}</p>
-            <h1>Full-Stack .NET &amp;<br /><span>React Developer</span></h1>
-            <p className="hero-intro">AI-Assisted Development with Claude</p>
+            <h1>Hi, I’m<br /><span>Mohamed Hussain</span></h1>
+            <p className="hero-intro" key={activeHeroHighlight}>
+              {heroHighlights[activeHeroHighlight]}
+            </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#experience">View experience <ArrowDown size={16} aria-hidden="true" /></a>
               <a className="button button-secondary" href="/resume.pdf" download="Mohamed-Hussain-Resume.pdf">
@@ -62,11 +83,11 @@ function App() {
         </section>
 
         <section className="about section-wrap section-block" id="about">
-          <div className="section-label"><span>01</span> ABOUT</div>
+          <div className="section-label"><span>01</span> ABOUT ME</div>
           <div className="about-content">
-            <h2>Experienced in<br /><span>business software.</span></h2>
+            <h2>Senior Programmer<br /><span>Analyst.</span></h2>
             <p className="about-summary">
-              From CRM and ERP modules to offline desktop tools, I focus on practical, maintainable software.
+              I’m Mohamed Hussain P, with 14+ years of experience building and maintaining enterprise CRM, ERP, and billing applications. My work spans C#, ASP.NET, SQL Server, REST APIs, React, and TypeScript, including business-critical modules and the modernization of legacy applications.
             </p>
           </div>
         </section>
@@ -75,7 +96,7 @@ function App() {
           <div className="section-label"><span>02</span> EXPERIENCE</div>
           <div className="section-main">
             <div className="section-heading">
-              <div><p className="eyebrow">CAREER HISTORY</p><h2>Professional<br />experience.</h2></div>
+              <div><p className="eyebrow">CAREER HISTORY</p><h2>Professional<br />Experience.</h2></div>
               <span className="section-count">03 ROLES</span>
             </div>
             <div className="timeline">
@@ -104,7 +125,7 @@ function App() {
       </main>
 
       <footer className="site-footer section-wrap">
-        <a className="wordmark" href="#home">Mohamed Hussain P</a>
+        <a className="wordmark" href="#home" aria-label="Mohamed Hussain P, home">MH</a>
         <p>© {new Date().getFullYear()} {portfolio.name}</p>
         <div><a href={portfolio.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={13} aria-hidden="true" /></a><a href={`mailto:${portfolio.email}`}>Email <ArrowUpRight size={13} aria-hidden="true" /></a></div>
       </footer>
