@@ -1,6 +1,6 @@
 # Mohamed Hussain P — Portfolio Website
 
-A responsive personal portfolio built with React, TypeScript and Vite. The design uses a dark, near-black theme with a teal accent and responsive layouts for mobile, tablet and desktop.
+A responsive personal portfolio built with React, TypeScript and Vite. The design uses a dark navy theme with cyan-blue accents and responsive layouts for mobile, tablet and desktop.
 
 ## 1. Requirements
 
@@ -26,12 +26,9 @@ Portfolio content is kept in one file:
 
 Update the profile, contact details and experience there. Keep career claims grounded in verified work history.
 
-### Add your resume
+### Resume download
 
-1. Export your resume as a PDF.
-2. Copy it to `public/resume.pdf`.
-3. In `src/data/portfolio.ts`, set `resumePath: '/resume.pdf'`.
-4. Add a Resume link/button in the header or hero if you want visitors to download it. The current design intentionally does not show a resume link until a real file is supplied.
+The hero's **Download Resume** button downloads the PDF at `public/resume.pdf`. Replace that file when you update your resume.
 
 ## 4. Build for production
 
@@ -73,8 +70,7 @@ vercel --prod
 
 ## 6. Before publishing
 
-- Add a PDF resume if you want to offer one for download.
-- Verify public contact details and career/project descriptions before publishing.
+- Verify public contact details and career descriptions before publishing.
 - Replace the default site URL/metadata if you connect a custom domain.
 - Test the navigation and layout on a phone and desktop.
 
@@ -83,7 +79,8 @@ vercel --prod
 ```text
 mohamed-hussain-portfolio/
 ├── public/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   └── resume.pdf
 ├── src/
 │   ├── data/
 │   │   └── portfolio.ts
