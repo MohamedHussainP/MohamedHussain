@@ -47,6 +47,8 @@ h1, h2, h3, p { margin-top: 0; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { color: #05070d; background: linear-gradient(100deg, #3fd0ff, #7c9cff); box-shadow: 0 12px 30px #3fd0ff33; }
 .button-primary:hover { background: linear-gradient(100deg, #68dcff, #9aaeff); box-shadow: 0 14px 36px #3fd0ff50; }
+.button-secondary { border-color: #ffffff26; color: #dbe4f0; background: #ffffff0d; }
+.button-secondary:hover { border-color: #3fd0ff66; background: #3fd0ff1a; }
 .text-link { color: #dbe4f0; font-size: 14px; }
 .text-link:hover { color: var(--accent); }
 .hero-meta { display: flex; align-items: center; gap: 22px; margin-top: 45px; color: var(--muted); font-size: 13px; }

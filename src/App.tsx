@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Mail, MapPin } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Download, Mail, MapPin } from 'lucide-react';
 import { portfolio } from './data/portfolio';
 
 function App() {
@@ -25,6 +25,9 @@ function App() {
             <p className="hero-intro">AI-Assisted Development with Claude</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#experience">View experience <ArrowDown size={16} aria-hidden="true" /></a>
+              <a className="button button-secondary" href="/resume.pdf" download="Mohamed-Hussain-Resume.pdf">
+                Download Resume <Download size={16} aria-hidden="true" />
+              </a>
               <a className="text-link" href={`mailto:${portfolio.email}`}>Get in touch <ArrowUpRight size={16} aria-hidden="true" /></a>
             </div>
             <div className="hero-meta">
